@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  cursor: default;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+.transBG{
+  background: linear-gradient(rgba(0, 0, 0, 0.334),rgba(0,0,0,0.334));
+}
+
+.icon {
+  height: 3.2vh;
+  width: 4vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.h3Small {
+  font-size: 0.92rem;
+}
+
+.h5Small {
+  font-size: 0.775rem;
+  line-height: 1rem;
+}
+
+.text-dxl {
+    font-size: 1.29rem;
+    line-height: 1.79rem;
+}
+
+.scrolled {
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hamburger {
+  font-size: 2rem;
+}
+
+.navBar {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 8px 32px rgba(2, 4, 24, 0.1);
+  border-right: 2px solid rgba(255, 255, 255, 0.09);
+  border-left: 2px solid rgba(255, 255, 255, 0.09);
+}
+
+nav img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.SearchFile {
+  position: fixed;
+  z-index: 1000;
+  background: rgb(255, 255, 255);
+  transition: 0.01s ease;
+}
+
+.carousel {
+  z-index: 10;
+}
+
+.headerImage{
+  background: url("../Asset/backImage/blue-copy-space-digital-background_23-2148821698.jpg");
+  background-size: cover;
+}
+
+
+/*  */
+@media screen and (max-width: 940px) {
+  .hamburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 781px) {
+.scrolled {
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.1);
+}
+}
